@@ -1,0 +1,32 @@
+{
+    "title": "Volcano Alert Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "observatory": {
+            "title": "Observatory",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Limit to one USGS volcano observatory by abbreviation, e.g. \"avo\" (Alaska), \"hvo\" (Hawaii), \"cvo\" (Cascades), \"yvo\" (Yellowstone), \"nmi\" (Northern Mariana Islands). Leave blank for all observatories."
+        },
+        "minAlertLevel": {
+            "title": "Minimum alert level",
+            "type": "string",
+            "editor": "select",
+            "description": "USGS alert levels in order: NORMAL < ADVISORY < WATCH < WARNING. This actor only ever returns volcanoes above NORMAL; use this to further limit to WATCH or WARNING only.",
+            "enum": ["ADVISORY", "WATCH", "WARNING"],
+            "enumTitles": ["Advisory and above (all elevated)", "Watch and above", "Warning only"],
+            "default": "ADVISORY"
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of volcanoes to return.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        }
+    },
+    "required": []
+}
