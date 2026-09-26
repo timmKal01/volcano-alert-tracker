@@ -1,0 +1,58 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "volcanoName",
+                    "volcanoNumber",
+                    "observatory",
+                    "observatoryAbbr",
+                    "alertLevel",
+                    "aviationColorCode",
+                    "noticeIssued",
+                    "noticeUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "volcanoName": {
+                        "label": "Volcano name",
+                        "format": "text"
+                    },
+                    "volcanoNumber": {
+                        "label": "Volcano number",
+                        "format": "text"
+                    },
+                    "observatory": {
+                        "label": "Observatory",
+                        "format": "text"
+                    },
+                    "observatoryAbbr": {
+                        "label": "Observatory abbr",
+                        "format": "text"
+                    },
+                    "alertLevel": {
+                        "label": "Alert level",
+                        "format": "text"
+                    },
+                    "aviationColorCode": {
+                        "label": "Aviation color code",
+                        "format": "text"
+                    },
+                    "noticeIssued": {
+                        "label": "Notice issued",
+                        "format": "text"
+                    },
+                    "noticeUrl": {
+                        "label": "Notice URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
