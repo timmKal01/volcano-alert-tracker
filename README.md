@@ -71,4 +71,4 @@ check returns 0 volcanoes or 100.
 
 ## Related products
 
-- [Earthquake Alert](https://github.com/timmKal01/earthquake-alert) — the seismic counterpart, also USGS
+- [Earthquake Tracker](https://apify.com/m_ctim/earthquake-alert): the seismic counterpart, also USGS
