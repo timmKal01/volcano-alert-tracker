@@ -1,12 +1,24 @@
-# Volcano Alert Tracker — USGS Elevated Volcanoes
+# Volcano Alert Tracker: USGS Elevated Volcanoes
 
-Get all currently elevated-alert-level US volcanoes from the official
-USGS Volcano Hazards Program: alert level, aviation color code,
-observatory, and a link to the full daily notice.
+Every U.S. volcano currently at an elevated alert level, for aviation and
+flight operations, disaster preparedness and insurance teams, and geology
+researchers. One run returns the official USGS status of each restless
+volcano, including the aviation color code used for ash warnings.
 
-Built for aviation (volcanic ash is a real flight-safety hazard),
-geology researchers, and disaster-preparedness teams who want current
-status without checking each observatory's page by hand.
+## What you get
+
+One row per elevated volcano:
+
+- Volcano name and number
+- Alert level (Advisory, Watch, Warning) and aviation color code (Yellow, Orange, Red)
+- The observatory monitoring it
+- When the latest notice was issued, with a link to it
+
+## Who this is for
+
+- **Aviation and flight operations teams**: volcanic ash is a flight safety hazard.
+- **Disaster preparedness and insurance teams** watching volcanoes near people and property.
+- **Geology researchers and educators** following current volcanic activity.
 
 ## Input
 

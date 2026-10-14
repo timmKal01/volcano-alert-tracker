@@ -2,7 +2,7 @@
     "actorSpecification": 1,
     "name": "volcano-alert-tracker",
     "title": "Volcano Alert Tracker: USGS Elevated Volcanoes",
-    "description": "Get all currently elevated-alert-level US volcanoes from the official USGS Volcano Hazards Program: alert level, aviation color code, observatory, and a link to the full notice. For aviation, geology, and disaster-preparedness use.",
+    "description": "Every U.S. volcano at an elevated alert level right now, from the official USGS Volcano Hazards Program: alert level, aviation color code, observatory and the latest notice. For aviation and flight operations, disaster preparedness and insurance teams, and researchers.",
     "version": "0.1",
     "meta": {
         "templateId": "custom-no-proxy"
