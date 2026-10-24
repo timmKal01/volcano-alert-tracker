@@ -1,3 +1,7 @@
+// Some public APIs refuse requests that identify themselves only as Node's default "node" user agent (data.cms.gov
+// started doing so in October 2026), so every request says which tool is asking and where to find it.
+const USER_AGENT = 'volcano-alert-tracker/0.1 (+https://apify.com/m_ctim/volcano-alert-tracker)';
+
 const URL_ENDPOINT = 'https://volcanoes.usgs.gov/hans-public/api/volcano/getElevatedVolcanoes';
 
 const ALERT_LEVEL_RANK = { NORMAL: 0, ADVISORY: 1, WATCH: 2, WARNING: 3 };
@@ -17,7 +21,7 @@ async function fetchWithRetry(url) {
         const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
         let res;
         try {
-            res = await fetch(url, { headers: { Connection: 'close' }, signal: controller.signal });
+            res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Connection: 'close' }, signal: controller.signal });
         } catch (err) {
             lastError = err.name === 'AbortError' ? new Error(`Request timed out after ${REQUEST_TIMEOUT_MS}ms: ${url}`) : err;
             if (attempt < MAX_ATTEMPTS) {
